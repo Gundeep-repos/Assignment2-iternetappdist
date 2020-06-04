@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Membership</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>
+        
+        <div id="links-div">
+            <a href = "index.html">  Home       </a>&nbsp;
+            <a href = "about.html">   About      </a>&nbsp;
+            <a href = "classes.html"> Classes    </a>&nbsp;
+            <a href = "services.html">Services   </a>&nbsp;
+            <a href = "memberships.html">  Memberships</a>
+        </div><br><br>
+        <h1>Welcome to FitLife Fitness and Training Center</h1>
+        <h2>Membership form</h2>
+        <div>
+            <form>
+                <label>Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="name"><br><br>
+                <label>Email:&nbsp;&nbsp;&nbsp;</label>
+                <input type="email" id="email"><br><br>
+                <label>Address:</label>
+                <textarea id="address"></textarea><br><br>
+
+                <label>Type of Membership: &nbsp;</label>
+                <select id = "plan">
+                    <option>--select--</option>
+                    <option value="pay-as-yo-go">Pay-as-yo-go</option>
+                    <option value="3-months">3-months</option>
+                    <option value="6-months">6-months</option>
+                    <option value="12-months">12-months</option>
+                </select><br><br>
+
+                <label>Mode of Payment: &nbsp;</label>
+                <label>Debit Card</label>
+                <input type="radio" name="payment" value="debit"/>
+                <label>Credit Card</label>
+                <input type="radio" name="payment" value="credit"/><br><br>
+
+                <label>I wish to receive email updates about upcoming new promotions and latest news&nbsp;</label>
+                <input type="checkbox" id="noti">
+            </form>
+
+        </div>
+    </center>
+</body>
+</html>
