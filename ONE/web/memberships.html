@@ -8,6 +8,7 @@ and open the template in the editor.
     <head>
         <title>Membership</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script>
 		function myFunction() {
@@ -16,9 +17,13 @@ and open the template in the editor.
 		</script>
 	</head>
     <body>
+        <div class="logo">
+            <img style="width: 100px;height: 100px;" src="images/logo.jpg"/>
+            
+        </div>
     <center>
         
-        <div id="links-div">
+        <div style="color: white;" id="links-div">
             <a href = "index.html">  Home       </a>&nbsp;
             <a href = "about.html">   About      </a>&nbsp;
             <a href = "classes.html"> Classes    </a>&nbsp;
@@ -27,7 +32,7 @@ and open the template in the editor.
         </div><br><br>
         <h1>Welcome to FitLife Fitness and Training Center</h1>
         <h2>Membership form</h2>
-        <div>
+        <div style="color: white;">
             <form onsubmit="myFunction()">
                 <label>Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
                 <input type="text" id="name" required><br><br>
