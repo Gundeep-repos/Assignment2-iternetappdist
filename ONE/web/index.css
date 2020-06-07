@@ -3,9 +3,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    align-items: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* overflow-y: hidden ! important; */
+    overflow-x: hidden ! important;
 }
 h1,h2,h3,p,a {
     color: white;
+
 }
 .logo {
     display: inline;
@@ -15,6 +22,17 @@ h1,h2,h3,p,a {
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
-    font-size: 30px;
+   font-size: 30px;
     
+}
+
+.alignContents {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+.list {
+    font-size: 1.5em;
 }

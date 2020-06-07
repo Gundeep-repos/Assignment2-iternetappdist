@@ -5,33 +5,37 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>Membership</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="index.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script>
-		function myFunction() {
-		  alert("Your Order is submitted Successfully");
-		}
-		</script>
-	</head>
-    <body>
-        <div class="logo">
-            <img style="width: 100px;height: 100px;" src="images/logo.jpg"/>
-            
-        </div>
+
+<head>
+    <title>Membership</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function myFunction() {
+            alert("Your Order is submitted Successfully");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="logo">
+        <img style="width: 100px;height: 100px;" src="images/logo.jpg" />
+
+    </div>
     <center>
-        
-        <div style="color: white;" id="links-div">
-            <a href = "index.html">  Home       </a>&nbsp;
-            <a href = "about.html">   About      </a>&nbsp;
-            <a href = "classes.html"> Classes    </a>&nbsp;
-            <a href = "services.html">Services   </a>&nbsp;
-            <a href = "memberships.html">  Memberships</a>
-        </div><br><br>
-        <h1>Welcome to FitLife Fitness and Training Center</h1>
-        <h2>Membership form</h2>
+
+        <br><br>
+        <h1>Welcome to FitLife Fitness and Training Center!</h1>
+        <h2>Make fitness your favourite habit!</h2>
+        <nav class="nav-tabs">
+            <a style="color: orange;" href="index.html"> Home </a>&nbsp;
+            <a style="color: orange;" href="about.html"> About </a>&nbsp;
+            <a style="color: orange;" href="classes.html"> Classes </a>&nbsp;
+            <a style="color: orange;" href="services.html">Services </a>&nbsp;
+            <a style="color: orange;" href="memberships.html"> Memberships</a>
+        </nav>
+        <h1>Membership form</h1>
         <div style="color: white;">
             <form onsubmit="myFunction()">
                 <label>Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
@@ -42,7 +46,7 @@ and open the template in the editor.
                 <textarea id="address" required></textarea><br><br>
 
                 <label>Type of Membership: &nbsp;</label>
-                <select id = "plan" required>
+                <select id="plan" required>
                     <option>--select--</option>
                     <option value="pay-as-yo-go">Pay-as-yo-go</option>
                     <option value="3-months">3-months</option>
@@ -51,17 +55,18 @@ and open the template in the editor.
                 </select><br><br>
 
                 <label>Mode of Payment: &nbsp;</label>
+                <input type="radio" name="payment" value="debit" />
                 <label>Debit Card</label>
-                <input type="radio" name="payment" value="debit"/>
-                <label>Credit Card</label>
-                <input type="radio" name="payment" value="credit"/><br><br>
-
-                <label>I wish to receive email updates about upcoming new promotions and latest news&nbsp;</label>
+                <input type="radio" name="payment" value="credit" />
+                <label>Credit Card</label><br><br>
                 <input type="checkbox" id="noti">
-				<br><input type="submit" id="bt1" value="Place order">
+                <label>I wish to receive email updates about upcoming new promotions and latest news&nbsp;</label>
+
+                <br><input type="submit" id="bt1" value="Place order">
             </form>
 
         </div>
     </center>
 </body>
+
 </html>
